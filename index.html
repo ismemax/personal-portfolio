@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Von Andrew Castillo — Design Docs</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="topbar">
+        <span class="tag">GDD // PUBLIC BUILD</span>
+        <nav>
+            <a href="#stack">Toolkit</a>
+            <a href="#buildlog">Build Log</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="doc-frame" style="position:relative;">
+            <div class="eyebrow">Cover Page · Rev. 2026.07</div>
+            <h1 class="title display">VON ANDREW<br>CASTILLO</h1>
+            <p class="hero-sub">Independent software & game developer — building gameplay mechanics, tools, systems, and
+                mobile applications, documented the way it actually gets built.</p>
+
+            <div class="hero-meta">
+                <span>Role <b>Developer</b></span>
+                <span>Platforms <b>PC, Mobile, Web</b></span>
+                <span>Status <b>In active development</b></span>
+            </div>
+
+            <div class="hero-margin">
+                <b>Note —</b>
+                This page is written like the design docs behind it: numbered, annotated, and honest about what's still
+                open.
+            </div>
+        </div>
+    </header>
+
+    <!-- STACK / TOOLKIT -->
+    <section class="section" id="stack">
+        <div class="doc-frame">
+            <span class="doc-number">APPENDIX — A</span>
+            <h2 class="display" style="color:var(--ink); font-size:clamp(28px,4.2vw,44px); max-width:none;">Toolkit</h2>
+            <p class="pitch" style="margin-bottom:40px;">Building cross-platform games, mobile utilities, and web APIs —
+                the toolkit behind the build log.</p>
+
+            <div class="stack-grid">
+                <div class="stack-col">
+                    <h3 style="color:var(--hazard);">Languages</h3>
+                    <ul class="stack-list">
+                        <li><span class="stack-name">Lua</span><span class="stack-note">game scripting, tools</span>
+                        </li>
+                        <li><span class="stack-name">C#</span><span class="stack-note">back-end, game logic</span></li>
+                        <li><span class="stack-name">Java</span><span class="stack-note">mobile, hardware
+                                bridging</span></li>
+                        <li><span class="stack-name">Python</span><span class="stack-note">general programming</span>
+                        </li>
+                        <li><span class="stack-name">JavaScript</span><span class="stack-note">front-end,
+                                back-end</span></li>
+                        <li><span class="stack-name">HTML/CSS</span><span class="stack-note">structure &amp;
+                                styling</span></li>
+                    </ul>
+                </div>
+                <div class="stack-col">
+                    <h3 style="color:var(--hazard);">Databases</h3>
+                    <ul class="stack-list">
+                        <li><span class="stack-name">Firebase</span><span class="stack-note">real-time backend</span>
+                        </li>
+                        <li><span class="stack-name">Supabase</span><span class="stack-note">database &amp; auth</span></li>
+                        <li><span class="stack-name">MySQL</span><span class="stack-note">relational data</span></li>
+                    </ul>
+                </div>
+                <div class="stack-col">
+                    <h3 style="color:var(--hazard);">Tools</h3>
+                    <ul class="stack-list">
+                        <li><span class="stack-name">Unity</span><span class="stack-note">game engine</span></li>
+                        <li><span class="stack-name">Github</span><span class="stack-note">version control</span></li>
+                        <li><span class="stack-name">Vercel</span><span class="stack-note">web deployment</span></li>
+                        <li><span class="stack-name">Arduino / NodeMCU</span><span class="stack-note">hardware
+                                prototyping</span></li>
+                        <li><span class="stack-name">Android Studio</span><span class="stack-note">mobile
+                                development</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BUILD LOG -->
+    <section class="section" id="buildlog">
+        <div class="doc-frame">
+            <span class="doc-number">APPENDIX — B</span>
+            <h2 class="display" style="color:var(--ink); font-size:clamp(28px,4.2vw,44px); max-width:none;">Build Log
+            </h2>
+            <p class="pitch" style="margin-bottom:48px;">Work experience and academic projects, most recent first.</p>
+
+            <div class="timeline">
+
+                <div class="timeline-entry is-work">
+                    <div class="timeline-date">February 2026 – April 2026</div>
+                    <div class="timeline-title">University of Makati</div>
+                    <div class="timeline-role">Software Developer</div>
+                    <ul>
+                        <li>Developed a mobile application for keeping track of apps for students</li>
+                        <li>Developed a RESTful API for adding reviews, account creation, and app downloading</li>
+                        <li>Created a website to increase classroom discourse</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-entry" data-repo="scamester">
+                    <div class="timeline-date">August 2025 – Present</div>
+                    <div class="timeline-title">Scamester</div>
+                    <div class="timeline-role">Game Developer</div>
+                    <ul>
+                        <li>Designed and implemented the algorithm for automatic difficulty selection</li>
+                        <li>Implemented the user interface of the game in Unity</li>
+                        <li>Established an API for the communication of the model and the game</li>
+                    </ul>
+                    <button class="repo-link" onclick="goToRepo('scamester', this)">
+                        <span class="repo-link-text">View repo</span>
+                        <span class="repo-link-arrow">→</span>
+                    </button>
+                </div>
+
+                <div class="timeline-entry" data-repo="booklat">
+                    <div class="timeline-date">February 2025 – June 2025</div>
+                    <div class="timeline-title">Booklat</div>
+                    <div class="timeline-role">Back End Developer</div>
+                    <ul>
+                        <li>Built the back-end logic of the system using C#</li>
+                        <li>Established a connection between Firebase and the system</li>
+                        <li>Used cloud storage for storing book images via Cloudinary</li>
+                    </ul>
+                    <button class="repo-link" onclick="goToRepo('booklat', this)">
+                        <span class="repo-link-text">View repo</span>
+                        <span class="repo-link-arrow">→</span>
+                    </button>
+                </div>
+
+                <div class="timeline-entry" data-repo="deception">
+                    <div class="timeline-date">August 2024 – January 2025</div>
+                    <div class="timeline-title">Deception</div>
+                    <div class="timeline-role">Game Developer</div>
+                    <ul>
+                        <li>Ensured the proper sequence was followed according to the game design</li>
+                        <li>Implemented character animations, sound system, sound effects, and environment effects</li>
+                        <li>Implemented the whole game logic using C# and Unity</li>
+                    </ul>
+                    <button class="repo-link" onclick="goToRepo('deception', this)">
+                        <span class="repo-link-text">View repo</span>
+                        <span class="repo-link-arrow">→</span>
+                    </button>
+                </div>
+
+                <div class="timeline-entry" data-repo="mobile-pet-feeder">
+                    <div class="timeline-date">February 2024 – June 2024</div>
+                    <div class="timeline-title">Mobile Pet Feeder</div>
+                    <div class="timeline-role">Full Stack Developer</div>
+                    <ul>
+                        <li>Created a hardware prototype using NodeMCU and Arduino</li>
+                        <li>Established a connection between the mobile application and Arduino using Java</li>
+                        <li>Implemented back-end logic across the NodeMCU, Arduino, and mobile application</li>
+                    </ul>
+                    <button class="repo-link" onclick="goToRepo('mobile-pet-feeder', this)">
+                        <span class="repo-link-text">View repo</span>
+                        <span class="repo-link-arrow">→</span>
+                    </button>
+                </div>
+
+                <div class="timeline-entry" data-repo="library-management-system">
+                    <div class="timeline-date">August 2023 – January 2024</div>
+                    <div class="timeline-title">Library Management System</div>
+                    <div class="timeline-role">Back End Developer</div>
+                    <ul>
+                        <li>Designed and implemented the database using SQL</li>
+                        <li>Established the core back-end logic of the system using C#</li>
+                        <li>Improved the performance and efficiency of the system</li>
+                    </ul>
+                    <button class="repo-link" onclick="goToRepo('library-management-system', this)">
+                        <span class="repo-link-text">View repo</span>
+                        <span class="repo-link-arrow">→</span>
+                    </button>
+                </div>
+
+                <div class="timeline-entry" data-repo="kopi-cold-brew-pos">
+                    <div class="timeline-date">February 2023 – June 2023</div>
+                    <div class="timeline-title">Kopi Cold Brew POS</div>
+                    <div class="timeline-role">Full Stack Developer</div>
+                    <ul>
+                        <li>Implemented the user interface using HTML, CSS, and JavaScript</li>
+                        <li>Wrote the back-end logic using JavaScript</li>
+                        <li>Collaborated with the team to come up with the design</li>
+                    </ul>
+                    <button class="repo-link" onclick="goToRepo('kopi-cold-brew-pos', this)">
+                        <span class="repo-link-text">View repo</span>
+                        <span class="repo-link-arrow">→</span>
+                    </button>
+                </div>
+
+                <div class="timeline-entry" data-repo="cybercafe-management-system">
+                    <div class="timeline-date">February 2023 – June 2023</div>
+                    <div class="timeline-title">Cybercafe Management System</div>
+                    <div class="timeline-role">Back End Developer</div>
+                    <ul>
+                        <li>Designed the peer-to-peer connection for the computers</li>
+                        <li>Implemented the back-end logic of the system using Java</li>
+                        <li>Collaborated with the team to come up with a design for the system</li>
+                    </ul>
+                    <button class="repo-link" onclick="goToRepo('cybercafe-management-system', this)">
+                        <span class="repo-link-text">View repo</span>
+                        <span class="repo-link-arrow">→</span>
+                    </button>
+                </div>
+
+                <div class="timeline-entry" data-repo="kinaiyah-ka-feh">
+                    <div class="timeline-date">August 2022 – January 2023</div>
+                    <div class="timeline-title">Kinaiyah Ka-feh</div>
+                    <div class="timeline-role">Full Stack Developer</div>
+                    <ul>
+                        <li>Designed the computer user interface and the mobile user interface</li>
+                        <li>Implemented the user interface using HTML, CSS, and JavaScript</li>
+                        <li>Improved user experience by adding animations and a dark/light mode system</li>
+                    </ul>
+                    <button class="repo-link" onclick="goToRepo('kinaiyah-ka-feh', this)">
+                        <span class="repo-link-text">View repo</span>
+                        <span class="repo-link-arrow">→</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PHILOSOPHY STRIP -->
+    <section class="philosophy">
+        <div class="doc-frame">
+            <div class="eyebrow">Design Principle</div>
+            <p>Every system gets documented before it gets built — the punch list is part of the pitch, not something to hide.</p>
+        </div>
+    </section>
+
+    <!-- COLOPHON / CONTACT -->
+    <section class="colophon" id="contact">
+        <div class="doc-frame">
+            <div class="colophon-top">
+                <div>
+                    <h3 class="display">Let's build<br>something.</h3>
+                    <p>Open to collaboration, playtesting feedback, or just talking systems and gameplay design.</p>
+                </div>
+                <div class="contact-links">
+                    <a id="contact-email" href="mailto:youremail@example.com">youremail@example.com</a>
+                    <a id="contact-roblox" href="#">roblox.com/users/yourprofile</a>
+                    <a id="contact-github" href="#">github.com/yourhandle</a>
+                    <a id="contact-discord" href="#">discord: yourhandle</a>
+                </div>
+            </div>
+
+            <div class="rev-table">
+                <div><b>Author</b>Von Andrew Castillo</div>
+                <div><b>Revision</b>2026.07 — public build</div>
+                <div><b>Classification</b>Public portfolio</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MISSING REPO CATCH OVERLAY -->
+    <div class="overlay" id="repo-overlay">
+        <div class="overlay-card">
+            <div class="overlay-stamp">Not found</div>
+            <div class="overlay-eyebrow">Error — 404</div>
+            <h3 class="display">This repo isn't public yet.</h3>
+            <p>The link on this project doesn't resolve to a real GitHub repository.</p>
+            <div class="overlay-repo" id="repo-overlay-path">yourhandle/repo-name</div>
+            <button class="overlay-close" onclick="closeOverlay()">Back to portfolio</button>
+        </div>
+    </div>
+
+    <script src="assets/js/config.js" defer></script>
+    <script src="assets/js/script.js" defer></script>
+
+</body>
+
+</html>
