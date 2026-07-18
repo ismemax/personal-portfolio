@@ -86,5 +86,18 @@ document.addEventListener('DOMContentLoaded', () => {
       discordEl.href = '#';
       discordEl.textContent = 'discord: ' + CONFIG.discordTag;
     }
+
+    const navCvEl = document.getElementById('nav-cv');
+    const heroCvEl = document.getElementById('hero-cv');
+    if (CONFIG.cvUrl && CONFIG.cvUrl !== '#') {
+      if (navCvEl) {
+        navCvEl.href = CONFIG.cvUrl;
+        navCvEl.style.display = 'inline';
+      }
+      if (heroCvEl) {
+        heroCvEl.href = CONFIG.cvUrl;
+        heroCvEl.style.display = 'inline-flex';
+      }
+    }
   }
 });

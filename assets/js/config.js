@@ -11,6 +11,9 @@ const CONFIG = {
   // Your Discord tag/handle
   discordTag: "maxxx0804",
 
+  // Link to your CV/Resume
+  cvUrl: "assets/files/CV.pdf",
+
   // Your GitHub username (used to dynamically build repository links)
   githubUsername: "ismemax",
 
