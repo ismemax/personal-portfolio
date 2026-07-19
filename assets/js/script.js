@@ -16,9 +16,9 @@ function getResolvedRepoPath(projectKey) {
   return projectKey;
 }
 
-async function goToRepo(projectKey, el){
+async function goToRepo(projectKey, el) {
   if (el.classList.contains('is-checking')) return;
-  
+
   const resolvedPath = getResolvedRepoPath(projectKey);
 
   if (resolvedPath.startsWith('http://') || resolvedPath.startsWith('https://')) {
@@ -42,20 +42,20 @@ async function goToRepo(projectKey, el){
   }
 }
 
-function showMissingOverlay(projectKey){
+function showMissingOverlay(projectKey) {
   const resolvedPath = getResolvedRepoPath(projectKey);
   document.getElementById('repo-overlay-path').textContent = resolvedPath;
   document.getElementById('repo-overlay').classList.add('is-visible');
 }
 
-function closeOverlay(){
+function closeOverlay() {
   document.getElementById('repo-overlay').classList.remove('is-visible');
 }
 
-document.getElementById('repo-overlay').addEventListener('click', function(e){
+document.getElementById('repo-overlay').addEventListener('click', function (e) {
   if (e.target === this) closeOverlay();
 });
-document.addEventListener('keydown', function(e){
+document.addEventListener('keydown', function (e) {
   if (e.key === 'Escape') closeOverlay();
 });
 
@@ -68,12 +68,13 @@ document.addEventListener('DOMContentLoaded', () => {
       emailEl.textContent = CONFIG.email;
     }
 
-    const robloxEl = document.getElementById('contact-roblox');
-    if (robloxEl && CONFIG.robloxUrl) {
-      robloxEl.href = CONFIG.robloxUrl;
-      // Display clean URL text (remove protocols)
-      robloxEl.textContent = CONFIG.robloxUrl.replace(/https?:\/\/(www\.)?/, '');
-    }
+    //ROBLOX CONTACT INFO
+    // const robloxEl = document.getElementById('contact-roblox');
+    // if (robloxEl && CONFIG.robloxUrl) {
+    //   robloxEl.href = CONFIG.robloxUrl;
+    //   // Display clean URL text (remove protocols)
+    //   robloxEl.textContent = CONFIG.robloxUrl.replace(/https?:\/\/(www\.)?/, '');
+    // }
 
     const githubEl = document.getElementById('contact-github');
     if (githubEl && CONFIG.githubUrl) {
